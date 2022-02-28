@@ -1,0 +1,32 @@
+name: Generate updated README
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+          cache: "pip"
+
+      - name: Install cog
+        run: pip install cogapp
+
+      - name: Generate README
+        run: cogapp -r README.md
+
+      - name: Commit README changes
+        run: |
+          git config --global user.name 'Lucas Melin'
+          git config --global user.email 'lucasmelin@users.noreply.github.com'
+          git commit -am ":robot: Automated README update"
+          git push
