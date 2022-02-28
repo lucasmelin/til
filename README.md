@@ -21,4 +21,9 @@ for topic in topics:
         cog.outl(f"- [{title}]({til.relative_to(project_dir)})")
     cog.outl()
 ]]]-->
+1 TILs so far.
+## python
+- [Using cog to update my TILs in a Markdown README file
+](python/cog-update-readme-dynamically.md)
+
 <!---[[[end]]]-->
