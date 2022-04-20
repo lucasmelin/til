@@ -21,7 +21,11 @@ for topic in topics:
         cog.outl(f"- [{title}]({til.relative_to(project_dir)})")
     cog.outl()
 ]]]-->
-1 TILs so far.
+2 TILs so far.
+## playwright
+- [In working with [Playwright](https://playwright.dev/), sometimes you need to search for an element like a button or dropdown that might have one of several attributes.
+](playwright/multiple-condition-selector.md)
+
 ## python
 - [Using cog to update my TILs in a Markdown README file
 ](python/cog-update-readme-dynamically.md)
