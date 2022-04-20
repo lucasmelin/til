@@ -23,7 +23,7 @@ for topic in topics:
 ]]]-->
 2 TILs so far.
 ## playwright
-- [In working with [Playwright](https://playwright.dev/), sometimes you need to search for an element like a button or dropdown that might have one of several attributes.
+- [Playwright: Selecting elements matching one of the conditions
 ](playwright/multiple-condition-selector.md)
 
 ## python
