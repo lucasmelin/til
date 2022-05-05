@@ -21,10 +21,14 @@ for topic in topics:
         cog.outl(f"- [{title}]({til.relative_to(project_dir)})")
     cog.outl()
 ]]]-->
-2 TILs so far.
+3 TILs so far.
 ## playwright
 - [Playwright: Selecting elements matching one of the conditions
 ](playwright/multiple-condition-selector.md)
+
+## go
+- [Installing Go tools
+](go/install-go-tools.md)
 
 ## python
 - [Using cog to update my TILs in a Markdown README file
